@@ -75,7 +75,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 			uart_buffer[uart_pointer] = '\0';
 			uart_flag = 1;
 		}
-	HAL_UART_Receive_IT(&huart1, &Rx_Buf, 1);
+		HAL_UART_Receive_IT(&huart1, &Rx_Buf, 1);
 	}
 }
 void UART_Handle()
